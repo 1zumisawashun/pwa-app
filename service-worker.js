@@ -1,5 +1,5 @@
 const cacheName = "Test";
-const filesToCache = ["./offline.html"];
+const filesToCache = "offline.html";
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", function (e) {

@@ -11,8 +11,6 @@ Copyright 2015, 2019, 2020, 2021 Google LLC. All Rights Reserved.
  limitations under the License.
 */
 
-// NOTE:以下コードは次の記事のコピペ内容になる＞https://web.dev/offline-fallback-page/
-
 // Incrementing OFFLINE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 1;
