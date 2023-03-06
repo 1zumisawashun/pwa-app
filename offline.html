@@ -40,12 +40,7 @@
     <!-- Inline the page's JavaScript file. -->
     <script>
       document.querySelector("button").addEventListener("click", () => {
-        if (navigator.onLine) {
-          console.log("onlineです。");
-          window.location.reload();
-        } else {
-          console.log("offlineです。");
-        }
+        window.location.reload();
       });
 
       // Listen to changes in the network state, reload when online.
