@@ -68,3 +68,19 @@ self.addEventListener("activate", (event) => {
   // Tell the active service worker to take control of the page immediately.
   self.clients.claim();
 });
+
+// push通知で必要になる
+self.addEventListener("push", (event) => {
+  console.log(event.data.text(), "event.data.text()");
+  event.waitUntil(
+    self.registration.showNotification("お知らせ", {
+      body: event.data.text(),
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  clients.openWindow("https://www.mitsue.co.jp/knowledge/blog/frontend/");
+
+  event.notification.close();
+});
