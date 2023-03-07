@@ -7,6 +7,7 @@ pwa-app のリポジトリです。
 - nuxt/pwa に頼らず独力で pwa 化の実装をする
 - pwa のオフラインページを作成する
 - workbox で pwa をリッチにする
+- push 通知の実装
 - 次の記事を参考にしている → https://web.dev/offline-fallback-page/
 
 ## Installation
